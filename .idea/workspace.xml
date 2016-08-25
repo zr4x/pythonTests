@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b78c679-2e3d-4306-b50b-b426737f3d07" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PythonTraining.iml" afterPath="$PROJECT_DIR$/.idea/PythonTraining.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_add_group.py" afterPath="$PROJECT_DIR$/test_add_group.py" />
     </list>
@@ -28,15 +26,11 @@
       <file leaf-file-name="test_add_group.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="167" column="63" selection-start-line="167" selection-start-column="63" selection-end-line="167" selection-end-column="63" />
+            <state relative-caret-position="231">
+              <caret line="146" column="41" selection-start-line="146" selection-start-column="41" selection-end-line="146" selection-end-column="41" />
               <folding>
                 <element signature="e#175#266#0" expanded="false" />
-                <element signature="e#431#494#0" expanded="false" />
-                <element signature="e#674#1450#0" expanded="false" />
-                <element signature="e#1496#1570#0" expanded="false" />
-                <element signature="e#1625#2005#0" expanded="false" />
-                <element signature="e#2245#6084#0" expanded="false" />
+                <element signature="e#2349#6225#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -86,8 +80,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="385" />
-    <option name="y" value="32" />
+    <option name="x" value="287" />
+    <option name="y" value="74" />
     <option name="width" value="1416" />
     <option name="height" value="1029" />
   </component>
@@ -429,24 +423,31 @@
       <option name="project" value="LOCAL" />
       <updated>1471780120097</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add new test( test_new_user_create) and new class for user form fill">
+      <created>1472149391393</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1472149391393</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_add_group_py - 2016.08.25 at 21h 08m 59s.xml">
-      <configuration name="py.test in test_add_group.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_add_group_py - 2016.08.25 at 21h 09m 04s.xml">
-      <configuration name="py.test in test_add_group.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_test_add_group_py - 2016.08.25 at 23h 21m 34s.xml">
       <configuration name="py.test in test_add_group.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_add_group_py - 2016.08.25 at 23h 22m 00s.xml">
       <configuration name="py.test in test_add_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_testnew_py - 2016.08.25 at 21h 09m 15s.xml">
-      <configuration name="py.test in testnew.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_add_group_py - 2016.08.25 at 23h 50m 40s.xml">
+      <configuration name="py.test in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_add_group_py - 2016.08.25 at 23h 51m 10s.xml">
+      <configuration name="py.test in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_add_group_py - 2016.08.25 at 23h 52m 03s.xml">
+      <configuration name="py.test in test_add_group.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_testnew_py - 2016.08.25 at 21h 19m 38s.xml">
       <configuration name="py.test in testnew.py" configurationId="tests" />
@@ -474,10 +475,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="385" y="32" width="1416" height="1029" extended-state="0" />
-    <editor active="false" />
+    <frame x="287" y="74" width="1416" height="1029" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18069667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18069667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -547,7 +548,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clear some text" />
     <MESSAGE value="Extracting methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extracting methods" />
+    <MESSAGE value="Add new test( test_new_user_create) and new class for user form fill" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new test( test_new_user_create) and new class for user form fill" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -558,7 +560,7 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -569,11 +571,7 @@
           <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
           <folding>
             <element signature="e#175#266#0" expanded="false" />
-            <element signature="e#431#494#0" expanded="false" />
-            <element signature="e#674#1450#0" expanded="false" />
-            <element signature="e#1496#1570#0" expanded="false" />
-            <element signature="e#1625#2005#0" expanded="false" />
-            <element signature="e#2245#6084#0" expanded="false" />
+            <element signature="e#2349#6225#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -600,11 +598,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#175#266#0" expanded="false" />
-            <element signature="e#431#494#0" expanded="false" />
-            <element signature="e#674#1450#0" expanded="false" />
-            <element signature="e#1496#1570#0" expanded="false" />
-            <element signature="e#1625#2005#0" expanded="false" />
-            <element signature="e#2245#6084#0" expanded="false" />
+            <element signature="e#2349#6225#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -623,11 +617,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#175#266#0" expanded="false" />
-            <element signature="e#431#494#0" expanded="false" />
-            <element signature="e#674#1450#0" expanded="false" />
-            <element signature="e#1496#1570#0" expanded="false" />
-            <element signature="e#1625#2005#0" expanded="false" />
-            <element signature="e#2245#6084#0" expanded="false" />
+            <element signature="e#2349#6225#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -673,15 +663,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="167" column="63" selection-start-line="167" selection-start-column="63" selection-end-line="167" selection-end-column="63" />
+        <state relative-caret-position="231">
+          <caret line="146" column="41" selection-start-line="146" selection-start-column="41" selection-end-line="146" selection-end-column="41" />
           <folding>
             <element signature="e#175#266#0" expanded="false" />
-            <element signature="e#431#494#0" expanded="false" />
-            <element signature="e#674#1450#0" expanded="false" />
-            <element signature="e#1496#1570#0" expanded="false" />
-            <element signature="e#1625#2005#0" expanded="false" />
-            <element signature="e#2245#6084#0" expanded="false" />
+            <element signature="e#2349#6225#0" expanded="false" />
           </folding>
         </state>
       </provider>

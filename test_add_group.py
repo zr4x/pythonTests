@@ -26,6 +26,7 @@ class test_add_group(unittest.TestCase):
         wd.find_element_by_link_text("group page").click()
 
     def create_group(self, wd, group):
+        self.open_groups_page(wd)
         # init group creation
         wd.find_element_by_name("new").click()
         # fill group form
@@ -41,12 +42,14 @@ class test_add_group(unittest.TestCase):
         wd.find_element_by_name("group_footer").send_keys(group.footer)
         # submit group creation
         wd.find_element_by_name("submit").click()
+        self.return_to_group_page(wd)
 
     def open_groups_page(self, wd):
         # open group's page
         wd.find_element_by_link_text("groups").click()
 
     def login(self, wd, username, password):
+        self.open_home_page(wd)
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(username)
@@ -125,35 +128,29 @@ class test_add_group(unittest.TestCase):
         wd.find_element_by_name("notes").clear()
         wd.find_element_by_name("notes").send_keys(UserForm.notes)
         self.confirm_new_user(wd)
+        self.return_to_home_page(wd)
 
     def confirm_new_user(self, wd):
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
 
     def add_new_user(self, wd):
         wd.find_element_by_link_text("add new").click()
-
+                    #### TEST ###
     def test_add_named_group(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, "admin", "secret")
-        self.open_groups_page(wd)
-        self.create_group(wd, Group("NewGroup", 'NewHeader', 'NewFooter'))
-        self.return_to_group_page(wd)
+        self.create_group(wd, Group("NewGroup", "NewHeader", "NewFooter"))
         self.logout(wd)
 
     def test_empty_group(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, "admin", "secret")
-        self.open_groups_page(wd)
-        self.create_group(wd, Group('', '', ''))
-        self.return_to_group_page(wd)
+        self.create_group(wd, Group("", "", ""))
         self.logout(wd)
 
 
     def test_new_user_create(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, "admin", "secret")
         self.add_new_user(wd)
         self.fill_new_user_form(wd,
@@ -168,7 +165,7 @@ class test_add_group(unittest.TestCase):
                                 byear="Nikolo", ayear="Nikolo",
                                 address2="Nikolo", phone2="Nikolo"
                                 ))
-        self.return_to_home_page(wd)
+        self.logout(wd)
 
     def tearDown(self):
         self.wd.quit()
