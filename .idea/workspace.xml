@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b78c679-2e3d-4306-b50b-b426737f3d07" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_add_group.py" afterPath="$PROJECT_DIR$/test_add_group.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_add_new_user.py" afterPath="$PROJECT_DIR$/test_add_new_user.py" />
@@ -29,10 +30,10 @@
           <file leaf-file-name="test_add_new_user.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test_add_new_user.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-154">
-                  <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+                <state relative-caret-position="216">
+                  <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
                   <folding>
-                    <element signature="e#24#39#0" expanded="true" />
+                    <element signature="e#24#54#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -62,14 +63,22 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="test_add_group.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="application.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/application.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1556">
+                  <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test_add_group.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test_add_group.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="976">
-                  <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#24#82#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="54">
+                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="35" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -107,6 +116,7 @@
         <option value="$PROJECT_DIR$/user_form.py" />
         <option value="$PROJECT_DIR$/add_new_user.py" />
         <option value="$PROJECT_DIR$/test_add_group.py" />
+        <option value="$PROJECT_DIR$/application.py" />
         <option value="$PROJECT_DIR$/test_add_new_user.py" />
       </list>
     </option>
@@ -492,38 +502,45 @@
       <option name="project" value="LOCAL" />
       <updated>1472410895799</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cleaning code&#10;">
+      <created>1472411814719</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1472411814719</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_add_new_user_py - 2016.08.28 at 23h 06m 49s.xml">
-      <configuration name="py.test in add_new_user.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_add_new_user_py - 2016.08.28 at 23h 08m 01s.xml">
-      <configuration name="py.test in add_new_user.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_add_new_user_py - 2016.08.28 at 23h 09m 29s.xml">
-      <configuration name="py.test in add_new_user.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_add_group_py - 2016.08.28 at 23h 58m 56s.xml">
+    <history-entry file="py_test_in_test_add_group_py - 2016.08.29 at 00h 42m 59s.xml">
       <configuration name="py.test in test_add_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_group_py - 2016.08.29 at 00h 15m 34s.xml">
+    <history-entry file="py_test_in_test_add_group_py - 2016.08.29 at 00h 44m 55s.xml">
       <configuration name="py.test in test_add_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_new_user_py - 2016.08.28 at 23h 56m 02s.xml">
+    <history-entry file="py_test_in_test_add_group_py - 2016.08.29 at 00h 46m 17s.xml">
+      <configuration name="py.test in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_add_group_py - 2016.08.29 at 00h 48m 29s.xml">
+      <configuration name="py.test in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_add_group_py - 2016.08.29 at 00h 49m 49s.xml">
+      <configuration name="py.test in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_add_group_py - 2016.08.29 at 00h 51m 58s.xml">
+      <configuration name="py.test in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_add_group_py - 2016.08.29 at 00h 53m 36s.xml">
+      <configuration name="py.test in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_add_group_py - 2016.08.29 at 00h 53m 58s.xml">
+      <configuration name="py.test in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_add_new_user_py - 2016.08.29 at 00h 49m 33s.xml">
       <configuration name="py.test in test_add_new_user.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_new_user_py - 2016.08.28 at 23h 59m 09s.xml">
-      <configuration name="py.test in test_add_new_user.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_add_new_user_py - 2016.08.29 at 00h 15m 43s.xml">
-      <configuration name="py.test in test_add_new_user.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_add_new_user_py - 2016.08.29 at 00h 16m 12s.xml">
-      <configuration name="py.test in test_add_new_user.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_add_new_user_py - 2016.08.29 at 00h 16m 32s.xml">
+    <history-entry file="py_test_in_test_add_new_user_py - 2016.08.29 at 00h 59m 29s.xml">
       <configuration name="py.test in test_add_new_user.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -613,7 +630,8 @@
     <MESSAGE value="Add new test( test_new_user_create) and new class for user form fill" />
     <MESSAGE value="Some improvements&#10;" />
     <MESSAGE value="Add new class for testing creating user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new class for testing creating user" />
+    <MESSAGE value="cleaning code&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning code&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -626,9 +644,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#82#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -652,9 +668,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-          <folding>
-            <element signature="e#24#82#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -671,9 +685,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#82#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -682,9 +694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#82#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -730,21 +740,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="976">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#82#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="54">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_add_new_user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+        <state relative-caret-position="216">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#24#39#0" expanded="true" />
+            <element signature="e#24#54#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1556">
+          <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
