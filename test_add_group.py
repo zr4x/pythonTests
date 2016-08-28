@@ -13,6 +13,7 @@ def is_alert_present(wd):
         return False
 
 class test_add_group(unittest.TestCase):
+
     def setUp(self):
         self.wd = WebDriver()
         self.wd.implicitly_wait(60)
@@ -61,10 +62,6 @@ class test_add_group(unittest.TestCase):
     def open_home_page(self, wd):
         wd.get("http://localhost/addressbook/")
 
-
-    def return_to_home_page(self, wd):
-        wd.find_element_by_link_text("home page").click()
-
     def fill_new_user_form(self, wd, UserForm):
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
@@ -104,6 +101,7 @@ class test_add_group(unittest.TestCase):
         wd.find_element_by_name("homepage").click()
         wd.find_element_by_name("homepage").clear()
         wd.find_element_by_name("homepage").send_keys(UserForm.homepage)
+        # Date selctor Birthday
         if not wd.find_element_by_xpath("//div[@id='content']/form/select[1]//option[3]").is_selected():
             wd.find_element_by_xpath("//div[@id='content']/form/select[1]//option[3]").click()
         if not wd.find_element_by_xpath("//div[@id='content']/form/select[2]//option[2]").is_selected():
@@ -111,6 +109,7 @@ class test_add_group(unittest.TestCase):
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys(UserForm.byear)
+        # Date selector Anniversary
         if not wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[3]").is_selected():
             wd.find_element_by_xpath("//div[@id='content']/form/select[3]//option[3]").click()
         if not wd.find_element_by_xpath("//div[@id='content']/form/select[4]//option[2]").is_selected():
@@ -130,6 +129,9 @@ class test_add_group(unittest.TestCase):
         self.confirm_new_user(wd)
         self.return_to_home_page(wd)
 
+    def return_to_home_page(self, wd):
+        wd.find_element_by_link_text("home page").click()
+
     def confirm_new_user(self, wd):
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
 
@@ -146,25 +148,6 @@ class test_add_group(unittest.TestCase):
         wd = self.wd
         self.login(wd, "admin", "secret")
         self.create_group(wd, Group("", "", ""))
-        self.logout(wd)
-
-
-    def test_new_user_create(self):
-        wd = self.wd
-        self.login(wd, "admin", "secret")
-        self.add_new_user(wd)
-        self.fill_new_user_form(wd,
-                                UserForm(
-                                firstname="Nikolo", middlename="Nikolo",
-                                lastname="Nikolo", nickname="Nikolo",
-                                title="Nikolo", company="Nikolo",
-                                adress="Nikolo", home="Nikolo",
-                                mobile="Nikolo", work="Nikolo",
-                                fax="Nikolo", notes="Nikolo",
-                                email="Nikolo", homepage="Nikolo",
-                                byear="Nikolo", ayear="Nikolo",
-                                address2="Nikolo", phone2="Nikolo"
-                                ))
         self.logout(wd)
 
     def tearDown(self):
