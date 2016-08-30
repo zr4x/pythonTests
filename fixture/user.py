@@ -163,7 +163,7 @@ class UserHelper:
         wd.find_element_by_name("notes").click()
         wd.find_element_by_name("notes").clear()
         wd.find_element_by_name("notes").send_keys(user_form.notes)
-        # Update User Profile
+        # Update user Profile
         wd.find_element_by_name("update").click()
         self.return_to_home_page()
 
