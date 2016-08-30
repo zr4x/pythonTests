@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-from user_form import UserForm
 import pytest
-from application import Application
+
+from fixture.application import Application
+from model.user_form import UserForm
 
 
 @pytest.fixture
