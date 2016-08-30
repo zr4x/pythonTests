@@ -13,7 +13,7 @@ def app(request):
 
 
 def test_new_user_create(app):
-    app.login("admin", "secret")
+    app.session.login("admin", "secret")
     app.add_new_user()
     app.fill_new_user_form(UserForm(
                                 firstname="Nikolo", middlename="Nikolo",
@@ -26,4 +26,4 @@ def test_new_user_create(app):
                                 byear="Nikolo", ayear="Nikolo",
                                 address2="Nikolo", phone2="Nikolo"
                             ))
-    app.logout()
+    app.session.logout()
