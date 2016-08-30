@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 import pytest
-
-from fixture.application import Application
 from model.group import *
+from fixture.application import Application
 
 
 @pytest.fixture
@@ -14,11 +13,11 @@ def app(request):
 
 def test_add_named_group(app):
     app.session.login(username="admin", password="secret")
-    app.create_group(Group("NewGroup", "NewHeader", "NewFooter"))
+    app.group.create(Group("NewGroup", "NewHeader", "NewFooter"))
     app.session.logout()
 
 
 def test_empty_group(app):
     app.session.login("admin", "secret")
-    app.create_group(Group("", "", ""))
+    app.group.create(Group("", "", ""))
     app.session.logout()

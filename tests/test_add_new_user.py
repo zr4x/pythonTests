@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import pytest
-
 from fixture.application import Application
 from model.user_form import UserForm
+
 
 
 @pytest.fixture
@@ -14,8 +14,8 @@ def app(request):
 
 def test_new_user_create(app):
     app.session.login("admin", "secret")
-    app.add_new_user()
-    app.fill_new_user_form(UserForm(
+    app.user_form.add_new_user()
+    app.user_form.fill_new_user_form(UserForm(
                                 firstname="Nikolo", middlename="Nikolo",
                                 lastname="Nikolo", nickname="Nikolo",
                                 title="Nikolo", company="Nikolo",
@@ -27,3 +27,5 @@ def test_new_user_create(app):
                                 address2="Nikolo", phone2="Nikolo"
                             ))
     app.session.logout()
+
+

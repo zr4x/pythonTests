@@ -1,7 +1,6 @@
 
 
 class UserForm:
-
     def __init__(self, firstname, middlename,
                  lastname, nickname, title, company,
                  adress, home, mobile,
