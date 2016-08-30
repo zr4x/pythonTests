@@ -3,8 +3,8 @@ from model.user_form import UserForm
 
 def test_new_user_create(app):
     app.session.login("admin", "secret")
-    app.user_form.add_new_user()
-    app.user_form.fill_new_user_form(UserForm(
+    app.user.add_new_user()
+    app.user.fill_new_user_form(UserForm(
                                 firstname="Nikolo", middlename="Nikolo",
                                 lastname="Nikolo", nickname="Nikolo",
                                 title="Nikolo", company="Nikolo",
