@@ -2,7 +2,6 @@ from model.user_form import UserForm
 
 
 def test_edit_first_user(app):
-    app.session.login("admin", "secret")
     app.user.editing_user(UserForm(
         firstname="2", middlename="3",
         lastname="Nik5olo", nickname="Nikolo",
@@ -14,4 +13,3 @@ def test_edit_first_user(app):
         byear="Nikolo", ayear="Nikolo",
         address2="Nikolo", phone2="Nikolo"
     ))
-    app.session.logout()
