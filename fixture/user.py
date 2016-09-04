@@ -32,6 +32,7 @@ class UserHelper:
 
     def go_to_edit_page(self):
         wd = self.app.wd
+
         self.select_first_user()
         wd.find_element_by_xpath(".//*[@id='maintable']/tbody/tr[2]/td[8]/a/img").click()
 
