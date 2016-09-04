@@ -7,6 +7,7 @@ class UserHelper:
         wd.find_element_by_link_text("add new").click()
 
     def fill_new_user_form(self, user_form):
+        self.add_new_user()
         self.fill_user_form(user_form)
         self.confirm_new_user()
         self.return_to_home_page()
@@ -68,3 +69,8 @@ class UserHelper:
             wd.find_element_by_name(field_name).click()
             wd.find_element_by_name(field_name).clear()
             wd.find_element_by_name(field_name).send_keys(text)
+
+    def count(self):
+        wd = self.app.wd
+        return len(wd.find_elements_by_name("selected[]"))
+
