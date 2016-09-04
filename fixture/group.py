@@ -9,10 +9,8 @@ class GroupHelper:
     def create(self, group):
         wd = self.app.wd
         self.open_groups_page()
-        # init group creation
         wd.find_element_by_name("new").click()
         self.fill_group_form(group)
-        # submit group creation
         wd.find_element_by_name("submit").click()
         self.return_to_group_page()
 
@@ -43,11 +41,8 @@ class GroupHelper:
         wd = self.app.wd
         self.open_groups_page()
         self.select_first_group()
-        # click edit button
         wd.find_element_by_name("edit").click()
-        #fill group form
         self.fill_group_form(group)
-        # click update button
         wd.find_element_by_name("update").click()
         self.return_to_group_page()
 
