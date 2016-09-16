@@ -1,20 +1,11 @@
 from model.user_form import UserForm
 
 
-def test_new_user_create(app):
+def test_first_user_delete(app):
+    old_users = app.user.get_users_list()
     if app.user.count() == 0:
-        app.user.fill_new_user_form(UserForm(
-            firstname="Nikolo", middlename="Nikolo",
-            lastname="Nikolo", nickname="Nikolo",
-            title="Nikolo", company="Nikolo",
-            adress="Nikolo", home="Nikolo",
-            mobile="Nikolo", work="Nikolo",
-            fax="Nikolo", notes="Nikolo",
-            email="Nikolo", homepage="Nikolo",
-            byear="Nikolo", ayear="Nikolo",
-            address2="Nikolo", phone2="Nikolo"
-        ))
+        app.user.fill_new_user_form(UserForm(firstname="nikili", middlename="lolo"))
     app.user.delete_fist_user()
-
-
-
+    new_users = app.user.get_users_list()
+    old_users[0:1] = []
+    assert old_users == new_users

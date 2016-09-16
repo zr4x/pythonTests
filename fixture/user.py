@@ -1,3 +1,5 @@
+from model.user_form import UserForm
+
 class UserHelper:
     def __init__(self, app):
         self.app = app
@@ -74,4 +76,23 @@ class UserHelper:
     def count(self):
         wd = self.app.wd
         return len(wd.find_elements_by_name("selected[]"))
+
+    def wait(self, url_string, elem_name):
+        wd = self.app.wd
+        while (wd.current_url.endswith(url_string) and len(wd.find_elements_by_name(elem_name)) > 0):
+            pass
+        wd.implicitly_wait(5)
+        return
+
+    def get_users_list(self):
+        wd = self.app.wd
+        self.wait("addressbook/", "maintable")
+        users = []
+        for element in wd.find_elements_by_name("entry"):
+            text = element.text
+            id = element.find_element_by_name("selected[]").get_attribute("value")
+            users.append(UserForm(firstname = text, id = id))
+        return users
+
+
 
