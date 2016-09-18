@@ -1,5 +1,6 @@
 from model.user_form import UserForm
 
+
 class UserHelper:
     def __init__(self, app):
         self.app = app
