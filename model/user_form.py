@@ -1,4 +1,4 @@
-
+from sys import maxsize
 
 class UserForm:
     def __init__(self, firstname=None,
@@ -46,3 +46,8 @@ class UserForm:
     def __repr__(self):
         return "%s:%s:%s" % (self.id, self.firstname, self.lastname)
 
+    def id_or_max(self):
+        if self.id:
+            return int(self.id)
+        else:
+            return maxsize
