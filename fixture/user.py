@@ -32,24 +32,30 @@ class UserHelper:
         wd = self.app.wd
         wd.get("http://localhost/addressbook/")
 
-    def delete_fist_user(self):
+    def delete_user_by_index(self, index):
         wd = self.app.wd
-        self.select_first_user()
+        self.select_user_by_index(index)
         wd.find_element_by_xpath(".//*[@id='content']/form[2]/div[2]/input").click()
         wd.switch_to_alert().accept()
         self.return_main_page()
         self.users_cache = None
 
-    def go_to_edit_page(self):
+    def delete_first_user(self, index):
+        self.delete_user_by_index(0)
+
+    def select_user_by_index(self, index):
         wd = self.app.wd
-        self.select_first_user()
+        wd.find_elements_by_name("selected[]")[index].click()
+
+    def go_to_edit_page(self, index):
+        wd = self.app.wd
+        self.select_user_by_index(index)
         wd.find_element_by_xpath(".//*[@id='maintable']/tbody/tr[2]/td[8]/a/img").click()
 
-    def editing_user(self, user_form):
+    def editing_by_index(self, index, user_form):
         wd = self.app.wd
-        self.go_to_edit_page()
+        self.go_to_edit_page(index)
         self.fill_user_form(user_form)
-        # Update user Profile
         wd.find_element_by_name("update").click()
         self.return_to_home_page()
         self.users_cache = None
