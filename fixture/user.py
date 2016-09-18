@@ -49,8 +49,9 @@ class UserHelper:
 
     def go_to_edit_page(self, index):
         wd = self.app.wd
-        self.select_user_by_index(index)
-        wd.find_element_by_xpath(".//*[@id='maintable']/tbody/tr[2]/td[8]/a/img").click()
+        wd.find_elements_by_name("selected[]")[index].click()
+        index += 2
+        wd.find_element_by_xpath("//table[@id='maintable']/tbody/tr["+str(index)+"]/td[8]/a/img").click()
 
     def editing_by_index(self, index, user_form):
         wd = self.app.wd
@@ -91,13 +92,6 @@ class UserHelper:
         wd = self.app.wd
         return len(wd.find_elements_by_name("selected[]"))
 
-    #def wait(self, url_string, elem_name):
-    #    wd = self.app.wd
-    #    while (wd.current_url.endswith(url_string) and len(wd.find_elements_by_name(elem_name)) > 0):
-    #        pass
-    #    wd.implicitly_wait(5)
-    #    return
-
     users_cache = None
 
     def get_users_list(self):
@@ -106,7 +100,6 @@ class UserHelper:
             wd.get("http://localhost/addressbook/")
         if self.users_cache is None:
             wd = self.app.wd
-            #self.wait("addressbook/", "maintable")
             self.users_cache = []
             for element in wd.find_elements_by_name("entry"):
                 id = element.find_element_by_name("selected[]").get_attribute("value")
