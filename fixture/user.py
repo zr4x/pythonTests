@@ -9,11 +9,12 @@ class UserHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
 
-    def fill_new_user_form(self, user_form):
+    def create(self, user_form):
         self.add_new_user()
         self.fill_user_form(user_form)
         self.confirm_new_user()
         self.return_to_home_page()
+        self.users_cache = None
 
     def confirm_new_user(self):
         wd = self.app.wd
@@ -27,15 +28,20 @@ class UserHelper:
         wd = self.app.wd
         wd.find_element_by_name("selected[]").click()
 
+    def return_main_page(self):
+        wd = self.app.wd
+        wd.get("http://localhost/addressbook/")
+
     def delete_fist_user(self):
         wd = self.app.wd
         self.select_first_user()
         wd.find_element_by_xpath(".//*[@id='content']/form[2]/div[2]/input").click()
         wd.switch_to_alert().accept()
+        self.return_main_page()
+        self.users_cache = None
 
     def go_to_edit_page(self):
         wd = self.app.wd
-
         self.select_first_user()
         wd.find_element_by_xpath(".//*[@id='maintable']/tbody/tr[2]/td[8]/a/img").click()
 
@@ -46,6 +52,7 @@ class UserHelper:
         # Update user Profile
         wd.find_element_by_name("update").click()
         self.return_to_home_page()
+        self.users_cache = None
 
     def fill_user_form(self, user_form):
         self.change_user_fill_value("firstname", user_form.firstname)
@@ -78,21 +85,27 @@ class UserHelper:
         wd = self.app.wd
         return len(wd.find_elements_by_name("selected[]"))
 
-    def wait(self, url_string, elem_name):
-        wd = self.app.wd
-        while (wd.current_url.endswith(url_string) and len(wd.find_elements_by_name(elem_name)) > 0):
-            pass
-        wd.implicitly_wait(5)
-        return
+    #def wait(self, url_string, elem_name):
+    #    wd = self.app.wd
+    #    while (wd.current_url.endswith(url_string) and len(wd.find_elements_by_name(elem_name)) > 0):
+    #        pass
+    #    wd.implicitly_wait(5)
+    #    return
+
+    users_cache = None
 
     def get_users_list(self):
         wd = self.app.wd
-        self.wait("addressbook/", "maintable")
-        users = []
-        for element in wd.find_elements_by_name("entry"):
-            id = element.find_element_by_name("selected[]").get_attribute("value")
-            cells = element.find_elements_by_tag_name("td")
-            firstname = cells[2].text
-            lastname = cells[1].text
-            users.append(UserForm(firstname=firstname, lastname=lastname, id=id))
-        return users
+        if not wd.current_url.endswith("/addressbook"):
+            wd.get("http://localhost/addressbook/")
+        if self.users_cache is None:
+            wd = self.app.wd
+            #self.wait("addressbook/", "maintable")
+            self.users_cache = []
+            for element in wd.find_elements_by_name("entry"):
+                id = element.find_element_by_name("selected[]").get_attribute("value")
+                cells = element.find_elements_by_tag_name("td")
+                firstname = cells[2].text
+                lastname = cells[1].text
+                self.users_cache.append(UserForm(firstname=firstname, lastname=lastname, id=id))
+        return self.users_cache
