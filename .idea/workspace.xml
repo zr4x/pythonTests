@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b78c679-2e3d-4306-b50b-b426737f3d07" name="Default" comment="Add asserts for firsname and lastaname">
+    <list default="true" id="6b78c679-2e3d-4306-b50b-b426737f3d07" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture/group.py" afterPath="$PROJECT_DIR$/fixture/group.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture/user.py" afterPath="$PROJECT_DIR$/fixture/user.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/group/test_add_group.py" afterPath="$PROJECT_DIR$/tests/group/test_add_group.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/group/test_del_group.py" afterPath="$PROJECT_DIR$/tests/group/test_del_group.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/group/test_modification_group.py" afterPath="$PROJECT_DIR$/tests/group/test_modification_group.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/user/test_add_new_user.py" afterPath="$PROJECT_DIR$/tests/user/test_add_new_user.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/user/test_del_user.py" afterPath="$PROJECT_DIR$/tests/user/test_del_user.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/user/test_edit_user.py" afterPath="$PROJECT_DIR$/tests/user/test_edit_user.py" />
     </list>
@@ -42,11 +39,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test_edit_user.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="test_edit_user.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/user/test_edit_user.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+                <state relative-caret-position="136">
+                  <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -55,18 +52,18 @@
           <file leaf-file-name="user_form.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/model/user_form.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="680">
+                <state relative-caret-position="430">
                   <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test_add_new_user.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="test_add_new_user.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/user/test_add_new_user.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
                   <folding>
                     <marker date="1474202895603" expanded="true" signature="69:429" ph="..." />
                   </folding>
@@ -77,8 +74,8 @@
           <file leaf-file-name="test_del_user.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/user/test_del_user.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -87,8 +84,8 @@
           <file leaf-file-name="group.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/fixture/group.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+                <state relative-caret-position="351">
+                  <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -98,9 +95,10 @@
             <entry file="file://$PROJECT_DIR$/tests/group/test_modification_group.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="170">
-                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <caret line="10" column="29" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="29" />
                   <folding>
-                    <marker date="1474203674576" expanded="true" signature="65:70" ph="..." />
+                    <element signature="e#0#29#0" expanded="true" />
+                    <marker date="1474215305587" expanded="true" signature="187:192" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -111,16 +109,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="306">
                   <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_del_group.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/group/test_del_group.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -139,22 +127,36 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="group.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/fixture/group.py">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="test_del_group.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tests/group/test_del_group.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1054">
-                  <caret line="62" column="15" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="15" />
-                  <folding />
+                <state relative-caret-position="153">
+                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#29#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test_del_user.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="group.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fixture/group.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1054">
+                  <caret line="72" column="15" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="15" />
+                  <folding>
+                    <marker date="1474215335885" expanded="true" signature="49:2821" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test_del_user.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/user/test_del_user.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+                <state relative-caret-position="119">
+                  <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -205,14 +207,14 @@
         <option value="$PROJECT_DIR$/model/group.py" />
         <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/model/user_form.py" />
-        <option value="$PROJECT_DIR$/fixture/group.py" />
         <option value="$PROJECT_DIR$/tests/group/test_add_group.py" />
-        <option value="$PROJECT_DIR$/tests/user/test_add_new_user.py" />
         <option value="$PROJECT_DIR$/fixture/user.py" />
-        <option value="$PROJECT_DIR$/tests/user/test_del_user.py" />
         <option value="$PROJECT_DIR$/tests/group/test_del_group.py" />
         <option value="$PROJECT_DIR$/tests/group/test_modification_group.py" />
+        <option value="$PROJECT_DIR$/fixture/group.py" />
+        <option value="$PROJECT_DIR$/tests/user/test_del_user.py" />
         <option value="$PROJECT_DIR$/tests/user/test_edit_user.py" />
+        <option value="$PROJECT_DIR$/tests/user/test_add_new_user.py" />
       </list>
     </option>
   </component>
@@ -364,8 +366,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,7 +387,7 @@
       <recent name="G:\Training\PythonTraining\tests\User" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Running all test's">
+  <component name="RunManager" selected="Python tests.py.test in test_edit_user.py">
     <configuration default="false" name="py.test in test_add_new_user.py" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -434,30 +436,6 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="py.test in test_add_group.py" type="tests" factoryName="py.test" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonTraining" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="$PROJECT_DIR$/tests/group/test_add_group.py" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="py.test in test_edit_user.py" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -482,7 +460,7 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="py.test in test_new_user_create" type="tests" factoryName="py.test" temporary="true">
+    <configuration default="false" name="py.test in test_del_group.py" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -499,11 +477,35 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="$PROJECT_DIR$/tests/user/test_add_new_user.py" />
-      <option name="keywords" value="test_new_user_create" />
+      <option name="testToRun" value="$PROJECT_DIR$/tests/group/test_del_group.py" />
+      <option name="keywords" value="" />
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="true" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in test_modification_group.py" type="tests" factoryName="py.test" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonTraining" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="$PROJECT_DIR$/tests/group/test_modification_group.py" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -668,17 +670,17 @@
       <item index="0" class="java.lang.String" itemvalue="Python tests.Running all test's" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_add_new_user.py" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_del_user.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_add_group.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_edit_user.py" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.py.test in test_new_user_create" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_edit_user.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_del_group.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.py.test in test_modification_group.py" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_edit_user.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_add_new_user.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_del_user.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_new_user_create" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_add_group.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_del_user.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_modification_group.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_del_group.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_add_new_user.py" />
       </list>
     </recent_temporary>
   </component>
@@ -843,30 +845,31 @@
       <option name="project" value="LOCAL" />
       <updated>1474199152976</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add caching and hashing for Groups and Users. + some optimization">
+      <created>1474204099775</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1474204099775</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Running_all_test's - 2016.09.18 at 18h 04m 50s.xml">
+    <history-entry file="Running_all_test's - 2016.09.18 at 21h 17m 48s.xml">
       <configuration name="Running all test's" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_new_user_py - 2016.09.18 at 18h 02m 20s.xml">
-      <configuration name="py.test in test_add_new_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_del_group_py - 2016.09.18 at 21h 06m 09s.xml">
+      <configuration name="py.test in test_del_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_new_user_py - 2016.09.18 at 18h 03m 02s.xml">
-      <configuration name="py.test in test_add_new_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_del_group_py - 2016.09.18 at 21h 06m 45s.xml">
+      <configuration name="py.test in test_del_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_edit_user_py - 2016.09.18 at 18h 01m 27s.xml">
-      <configuration name="py.test in test_edit_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_del_user_py - 2016.09.18 at 21h 19m 03s.xml">
+      <configuration name="py.test in test_del_user.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_edit_user_py - 2016.09.18 at 18h 01m 59s.xml">
-      <configuration name="py.test in test_edit_user.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_edit_user_py - 2016.09.18 at 18h 02m 12s.xml">
-      <configuration name="py.test in test_edit_user.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_edit_user_py - 2016.09.18 at 18h 02m 29s.xml">
-      <configuration name="py.test in test_edit_user.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_del_user_py - 2016.09.18 at 21h 19m 12s.xml">
+      <configuration name="py.test in test_del_user.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_edit_user_py - 2016.09.18 at 18h 02m 53s.xml">
       <configuration name="py.test in test_edit_user.py" configurationId="tests" />
@@ -876,6 +879,12 @@
     </history-entry>
     <history-entry file="py_test_in_test_edit_user_py - 2016.09.18 at 18h 03m 51s.xml">
       <configuration name="py.test in test_edit_user.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_edit_user_py - 2016.09.18 at 21h 19m 21s.xml">
+      <configuration name="py.test in test_edit_user.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_modification_group_py - 2016.09.18 at 21h 15m 46s.xml">
+      <configuration name="py.test in test_modification_group.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -894,10 +903,10 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1227608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45093715" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45037353" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25278395" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47519293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49062845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -979,7 +988,8 @@
     <MESSAGE value="добавил проверку на группы" />
     <MESSAGE value="some cleaning" />
     <MESSAGE value="Add asserts for firsname and lastaname" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add asserts for firsname and lastaname" />
+    <MESSAGE value="Add caching and hashing for Groups and Users. + some optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add caching and hashing for Groups and Users. + some optimization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1123,7 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1131,7 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1139,7 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1147,7 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,7 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1181,7 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1189,7 +1193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1197,7 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1217,37 +1219,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixture/user.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/user/test_del_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/user/test_add_new_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding>
-            <marker date="1474202895603" expanded="true" signature="69:429" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1259,7 +1235,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/user_form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/group/test_del_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/group/test_modification_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1474215305587" expanded="true" signature="187:192" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/user/test_edit_user.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -1267,29 +1280,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/group/test_modification_group.py">
+    <entry file="file://$PROJECT_DIR$/tests/user/test_del_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/user/test_add_new_user.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
           <folding>
-            <marker date="1474203674576" expanded="true" signature="65:70" ph="..." />
+            <marker date="1474202895603" expanded="true" signature="69:429" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/user_form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/user/test_edit_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
