@@ -2,7 +2,7 @@ from model.user_form import UserForm
 from random import randrange
 
 
-def test_first_user_delete(app):
+def test_user_delete(app):
     user = UserForm(firstname="nikili", middlename="lolo")
 
     if app.user.count() == 0:

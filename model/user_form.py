@@ -1,5 +1,6 @@
 from sys import maxsize
 
+
 class UserForm:
     def __init__(self, firstname=None,
                  middlename=None,
@@ -8,9 +9,9 @@ class UserForm:
                  title=None,
                  company=None,
                  adress=None,
-                 home=None,
-                 mobile=None,
-                 work=None,
+                 homephone=None,
+                 mobilephone=None,
+                 workphone=None,
                  fax=None,
                  email=None,
                  homepage=None,
@@ -19,7 +20,7 @@ class UserForm:
                  address2=None,
                  phone2=None,
                  notes=None,
-                 id = None):
+                 id=None):
         self.firstname = firstname
         self.middlename = middlename
         self.lastname = lastname
@@ -27,10 +28,10 @@ class UserForm:
         self.title = title
         self.company = company
         self.adress = adress
-        self.home = home
-        self.mobile = mobile
-        self.work  = work
-        self.fax  = fax
+        self.home = homephone
+        self.mobile = mobilephone
+        self.work = workphone
+        self.fax = fax
         self.email = email
         self.homepage = homepage
         self.byear = byear

@@ -40,18 +40,12 @@ class UserHelper:
         self.return_main_page()
         self.users_cache = None
 
-    def delete_first_user(self, index):
-        self.delete_user_by_index(0)
+    def delete_first_user(self):
+        self.delete_user_by_index()
 
     def select_user_by_index(self, index):
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
-
-    def go_to_edit_page(self, index):
-        wd = self.app.wd
-        wd.find_elements_by_name("selected[]")[index].click()
-        index += 2
-        wd.find_element_by_xpath("//table[@id='maintable']/tbody/tr["+str(index)+"]/td[8]/a/img").click()
 
     def editing_by_index(self, index, user_form):
         wd = self.app.wd
@@ -108,3 +102,32 @@ class UserHelper:
                 lastname = cells[1].text
                 self.users_cache.append(UserForm(firstname=firstname, lastname=lastname, id=id))
         return self.users_cache
+
+    def open_user_view_by_index(self, index):
+        wd = self.app.wd
+        self.app.open_home_page()
+        row = wd.find_elements_by_name("entry")[index]
+        cell = row.find_elements_by_tag_name("td")[6]
+        cell.find_element_by_tag_name("a").click()
+
+    def go_to_edit_page(self, index):
+        wd = self.app.wd
+        self.app.open_home_page()
+        row = wd.find_elements_by_name("entry")[index]
+        cell = row.find_elements_by_tag_name("td")[7]
+        cell.find_element_by_tag_name("a").click()
+
+    def get_users_info_from_edit_page(self, index):
+        wd = self.app.wd
+        self.go_to_edit_page(index)
+        firstname = wd.find_element_by_name("firstname").get_attribute("value")
+        lastname = wd.find_element_by_name("lastname").get_attribute("value")
+        id = wd.find_element_by_name("id").get_attribute("value")
+        homephone = wd.find_element_by_name("home").get_attribute("value")
+        mobilephone = wd.find_element_by_name("work").get_attribute("value")
+        workphone = wd.find_element_by_name("mobile").get_attribute("value")
+        phone2 = wd.find_element_by_name("home").get_attribute("value")
+        return UserForm(firstname=firstname, lastname=lastname, id=id,
+                        homephone=homephone, mobilephone=mobilephone, workphone=workphone,
+                        phone2=phone2)
+
