@@ -63,7 +63,7 @@ class UserHelper:
         self.change_user_fill_value("nickname", user_form.nickname)
         self.change_user_fill_value("title", user_form.title)
         self.change_user_fill_value("company", user_form.company)
-        self.change_user_fill_value("address", user_form.adress)
+        self.change_user_fill_value("address", user_form.address)
         self.change_user_fill_value("home", user_form.home)
         self.change_user_fill_value("mobile", user_form.mobile)
         self.change_user_fill_value("work", user_form.work)
@@ -89,6 +89,12 @@ class UserHelper:
 
     users_cache = None
 
+    def merge_address_like_on_home_page(user):
+        return "\n".join(filter(lambda x: x != "",
+                                map(lambda x: clear(x),
+                                    filter(lambda x: x is not None,
+                                           [user.address]))))
+
     def get_users_list(self):
         wd = self.app.wd
         if not wd.current_url.endswith("/addressbook"):
@@ -101,10 +107,13 @@ class UserHelper:
                 cells = element.find_elements_by_tag_name("td")
                 firstname = cells[2].text
                 lastname = cells[1].text
-                all_phones = cells[5].text.splitlines()
+                all_phones = cells[5].text
+                all_address = cells[3].text
+                all_emails = cells[4].text
                 self.users_cache.append(UserForm(firstname=firstname, lastname=lastname, id=id,
-                                                 homephone=all_phones[0], mobilephone=all_phones[1],
-                                                 workphone=all_phones[2], phone2=all_phones[3]
+                                                 all_phones_from_home_page=all_phones,
+                                                 all_address_from_home_page=all_address,
+                                                 all_emails_from_home_page=all_emails
                                                  ))
         return self.users_cache
 
@@ -132,9 +141,14 @@ class UserHelper:
         mobilephone = wd.find_element_by_name("mobile").get_attribute("value")
         workphone = wd.find_element_by_name("work").get_attribute("value")
         phone2 = wd.find_element_by_name("phone2").get_attribute("value")
+        # home task 14
+        email = wd.find_element_by_name("email").get_attribute("value")
+        email2 = wd.find_element_by_name("email2").get_attribute("value")
+        email3 = wd.find_element_by_name("email3").get_attribute("value")
+        address = wd.find_element_by_name("address").get_attribute("value")
         return UserForm(firstname=firstname, lastname=lastname, id=id,
                         homephone=homephone, mobilephone=mobilephone, workphone=workphone,
-                        phone2=phone2)
+                        phone2=phone2, email=email, email2=email2, email3=email3, address=address)
 
     def get_users_from_view_page(self, index):
         wd = self.app.wd
