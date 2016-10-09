@@ -89,12 +89,6 @@ class UserHelper:
 
     users_cache = None
 
-    def merge_address_like_on_home_page(user):
-        return "\n".join(filter(lambda x: x != "",
-                                map(lambda x: clear(x),
-                                    filter(lambda x: x is not None,
-                                           [user.address]))))
-
     def get_users_list(self):
         wd = self.app.wd
         if not wd.current_url.endswith("/addressbook"):
