@@ -100,7 +100,11 @@ class UserHelper:
                 cells = element.find_elements_by_tag_name("td")
                 firstname = cells[2].text
                 lastname = cells[1].text
-                self.users_cache.append(UserForm(firstname=firstname, lastname=lastname, id=id))
+                all_phones = cells[5].text.splitlines()
+                self.users_cache.append(UserForm(firstname=firstname, lastname=lastname, id=id,
+                                                 homephone=all_phones[0], mobilephone=all_phones[1],
+                                                 workphone=all_phones[2], phone2=all_phones[3]
+                                                 ))
         return self.users_cache
 
     def open_user_view_by_index(self, index):
@@ -124,10 +128,13 @@ class UserHelper:
         lastname = wd.find_element_by_name("lastname").get_attribute("value")
         id = wd.find_element_by_name("id").get_attribute("value")
         homephone = wd.find_element_by_name("home").get_attribute("value")
-        mobilephone = wd.find_element_by_name("work").get_attribute("value")
-        workphone = wd.find_element_by_name("mobile").get_attribute("value")
-        phone2 = wd.find_element_by_name("home").get_attribute("value")
+        mobilephone = wd.find_element_by_name("mobile").get_attribute("value")
+        workphone = wd.find_element_by_name("work").get_attribute("value")
+        phone2 = wd.find_element_by_name("phone2").get_attribute("value")
         return UserForm(firstname=firstname, lastname=lastname, id=id,
                         homephone=homephone, mobilephone=mobilephone, workphone=workphone,
                         phone2=phone2)
+
+
+
 
