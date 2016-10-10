@@ -28,8 +28,8 @@ class SessionHelper:
 
     def ensure_logout(self):
         if self.is_logged_in():
-            self.logout()
 
+            self.logout()
     def ensure_login(self, username, password):
         if self.is_logged_in():
             if self.is_logged_in_as(username):

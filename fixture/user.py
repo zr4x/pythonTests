@@ -106,8 +106,8 @@ class UserHelper:
                 all_emails = cells[4].text
                 self.users_cache.append(UserForm(firstname=firstname, lastname=lastname, id=id,
                                                  all_phones_from_home_page=all_phones,
-                                                 all_address_from_home_page=all_address,
-                                                 all_emails_from_home_page=all_emails
+                                                 address=all_address,
+                                                 email=all_emails
                                                  ))
         return self.users_cache
 
