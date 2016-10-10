@@ -42,7 +42,7 @@ class UserHelper:
         self.users_cache = None
 
     def delete_first_user(self):
-        self.delete_user_by_index()
+        self.delete_user_by_index(0)
 
     def select_user_by_index(self, index):
         wd = self.app.wd
@@ -83,8 +83,16 @@ class UserHelper:
             wd.find_element_by_name(field_name).clear()
             wd.find_element_by_name(field_name).send_keys(text)
 
+    def return_to_contact(self):
+        wd = self.app.wd
+        if len(wd.find_elements_by_xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img")) > 0 \
+                and len(wd.find_elements_by_xpath("//div[@id='content']/form[2]/div[1]/input")) > 0:
+            return
+        wd.find_element_by_link_text("home").click()
+
     def count(self):
         wd = self.app.wd
+        self.return_to_contact()
         return len(wd.find_elements_by_name("selected[]"))
 
     users_cache = None
@@ -154,10 +162,3 @@ class UserHelper:
         phone2 = re.search("P: (.*)", text).group(1)
         return UserForm(homephone=homephone, mobilephone=mobilephone, workphone=workphone,
                         phone2=phone2)
-
-
-
-
-
-
-
