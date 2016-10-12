@@ -22,7 +22,7 @@ def test_home_page_vs_edit_page(app):
     if app.user.count() == 0:
         app.user.create(UserForm(firstname="Nikolo", lastname="Kozlov", nickname="rott",
                     homephone="33", mobilephone="895125646", workphone="+79999",
-                    phone2="898998", address="volodarskogo 50"))
+                    phone2="898998", address="volodarskogo 50", email="new@keepa.ru"))
     index = randrange(app.user.count())
     user_from_home_page = app.user.get_users_list()[index]
     user_from_edit_page = app.user.get_users_info_from_edit_page(index)

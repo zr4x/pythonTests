@@ -31,7 +31,10 @@ class UserHelper:
 
     def return_main_page(self):
         wd = self.app.wd
-        wd.get("http://localhost/addressbook/")
+        if len(wd.find_elements_by_xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img")) > 0 \
+                and len(wd.find_elements_by_xpath("//div[@id='content']/form[2]/div[1]/input")) > 0:
+            return
+        wd.find_element_by_link_text("home").click()
 
     def delete_user_by_index(self, index):
         wd = self.app.wd

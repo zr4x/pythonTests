@@ -8,8 +8,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture/session.py" afterPath="$PROJECT_DIR$/fixture/session.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture/user.py" afterPath="$PROJECT_DIR$/fixture/user.py" />
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/group.py" afterPath="$PROJECT_DIR$/model/group.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/group/test_add_group.py" afterPath="$PROJECT_DIR$/tests/group/test_add_group.py" />
+=======
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/user/test_phones.py" afterPath="$PROJECT_DIR$/tests/user/test_phones.py" />
     </list>
     <ignored path="PythonTraining.iws" />
@@ -30,11 +33,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test_phones.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_phones.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/user/test_phones.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="850">
               <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+=======
+            <state relative-caret-position="156">
+              <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -45,8 +53,25 @@
       <file leaf-file-name="user.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/user.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="303">
               <caret line="109" column="52" selection-start-line="109" selection-start-column="52" selection-end-line="109" selection-end-column="52" />
+=======
+            <state relative-caret-position="191">
+              <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_edit_user.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/user/test_edit_user.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="29" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -181,12 +206,17 @@
         <option value="$PROJECT_DIR$/tests/user/test_phones_on_home_page.py" />
         <option value="$PROJECT_DIR$/tests/user/test_add_new_user.py" />
         <option value="$PROJECT_DIR$/model/user_form.py" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/fixture/application.py" />
         <option value="$PROJECT_DIR$/fixture/user.py" />
         <option value="$PROJECT_DIR$/tests/user/test_phones.py" />
         <option value="$PROJECT_DIR$/model/group.py" />
         <option value="$PROJECT_DIR$/tests/group/test_add_group.py" />
+=======
+        <option value="$PROJECT_DIR$/fixture/user.py" />
+        <option value="$PROJECT_DIR$/tests/user/test_phones.py" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -362,7 +392,11 @@
       <recent name="G:\Training\PythonTraining\tests\User" />
     </key>
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager" selected="Python tests.py.test in test_add_group.py">
+=======
+  <component name="RunManager" selected="Python tests.Running all test's">
+>>>>>>> Stashed changes
     <configuration default="false" name="py.test in test_phones.py" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -862,12 +896,27 @@
       <option name="project" value="LOCAL" />
       <updated>1476013585795</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Home Work #14">
+      <created>1476013711065</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1476013711065</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< Updated upstream
     <history-entry file="py_test_in_test_add_group - 2016.10.10 at 22h 15m 25s.xml">
       <configuration name="py.test in test_add_group" configurationId="tests" />
+=======
+    <history-entry file="Running_all_test's - 2016.10.09 at 16h 53m 15s.xml">
+      <configuration name="Running all test's" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_home_page_vs_edit_page - 2016.10.09 at 16h 11m 42s.xml">
+      <configuration name="py.test in test_home_page_vs_edit_page" configurationId="tests" />
+>>>>>>> Stashed changes
     </history-entry>
     <history-entry file="py_test_in_test_add_group - 2016.10.10 at 22h 54m 16s.xml">
       <configuration name="py.test in test_add_group" configurationId="tests" />
@@ -881,11 +930,16 @@
     <history-entry file="py_test_in_test_add_group - 2016.10.10 at 23h 08m 17s.xml">
       <configuration name="py.test in test_add_group" configurationId="tests" />
     </history-entry>
+<<<<<<< Updated upstream
     <history-entry file="py_test_in_test_add_group_py - 2016.10.10 at 22h 16m 14s.xml">
       <configuration name="py.test in test_add_group.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_add_group_py - 2016.10.10 at 22h 54m 42s.xml">
       <configuration name="py.test in test_add_group.py" configurationId="tests" />
+=======
+    <history-entry file="py_test_in_test_phones_py - 2016.10.09 at 16h 35m 52s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
+>>>>>>> Stashed changes
     </history-entry>
     <history-entry file="py_test_in_test_add_group_py - 2016.10.10 at 23h 04m 56s.xml">
       <configuration name="py.test in test_add_group.py" configurationId="tests" />
@@ -907,7 +961,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< Updated upstream
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
+=======
+    <frame x="0" y="24" width="1366" height="744" extended-state="7" />
+>>>>>>> Stashed changes
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11169652" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1202,12 +1260,31 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/tests/group/test_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/fixture/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/user/test_phones.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
