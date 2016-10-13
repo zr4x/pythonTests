@@ -5,7 +5,7 @@ from fixture.user import UserHelper
 
 
 class Application:
-    def __init__(self, browser="firefox"):
+    def __init__(self, browser, url):
         if browser == "firefox":
             self.wd = webdriver.Firefox()
         elif browser == "chrome":
@@ -17,10 +17,11 @@ class Application:
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
         self.user = UserHelper(self)
+        self.url = url
 
     def open_home_page(self):
         wd = self.wd
-        wd.get("http://localhost/addressbook/")
+        wd.get(self.url)
 
     def is_valid(self):
         try:

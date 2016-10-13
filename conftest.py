@@ -10,11 +10,15 @@ def app(request):
     global fixture
     if fixture is None:
         browser = request.config.getoption("--browser")
-        fixture = Application(browser=browser)
+        url = request.config.getoption("--url")
+        fixture = Application(browser=browser, url=url)
+
     else:
         if not fixture.is_valid():
             fixture = Application()
-    fixture.session.ensure_login("admin", "secret")
+    username = request.config.getoption("--login")
+    password = request.config.getoption("--pass")
+    fixture.session.ensure_login(username=username, password=password)
     return fixture
 
 
@@ -28,4 +32,7 @@ def stop(request):
 
 
 def pytest_addoption(parser):
-    parser.addoption("--browser", action="store", default="firefox")
+    parser.addoption("--browser", action="store", default="chrome")
+    parser.addoption("--login", action="store", default="admin")
+    parser.addoption("--pass", action="store", default="")
+    parser.addoption("--url", action="store", default="http://localhost/addressbook/")
