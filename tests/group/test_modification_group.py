@@ -19,7 +19,6 @@ testdata = [Group(name="", header="", footer="")] + [
 def test_modification_group(app, group):
     if app.group.count() == 0:
         app.group.create(group)
-
     old_groups = app.group.get_group_list()
     index = random.randrange(len(old_groups))
     group.id = old_groups[index].id
