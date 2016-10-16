@@ -1,5 +1,13 @@
 {
-  "url": "http://localhost/addressbook/",
-  "login": "admin",
-  "pass": "secret"
+  "web":{
+    "url": "http://localhost/addressbook/",
+    "login": "admin",
+    "pass": "secret"
+  },
+  "db":{
+    "host": "localhost",
+    "name": "addressbook",
+    "user": "root",
+    "password": ""
+  }
 }
