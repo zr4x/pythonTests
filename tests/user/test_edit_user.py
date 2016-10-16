@@ -1,6 +1,6 @@
 from model.user_form import UserForm
 from random import randrange
-from data.add_user import testdata
+from data.user import testdata
 
 
 

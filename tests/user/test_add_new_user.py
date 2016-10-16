@@ -1,10 +1,8 @@
 from model.user_form import UserForm
-from data.add_user import testdata
-import pytest
 
 
-@pytest.mark.parametrize("user", testdata, ids=[repr(x) for x in testdata])
-def test_new_user_create(app, user):
+def test_new_user_create(app, json_user):
+    user = json_user
     old_users = app.user.get_users_list()
     app.user.create(user)
     new_users = app.user.get_users_list()

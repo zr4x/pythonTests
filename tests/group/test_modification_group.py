@@ -1,5 +1,5 @@
 from model.group import Group
-from data.add_group import testdata
+from data.group import testdata
 import random
 import pytest
 
