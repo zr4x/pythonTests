@@ -2,7 +2,7 @@ from selenium import webdriver
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper
 from fixture.user import UserHelper
-
+from fixture.db import DbFixture
 
 class Application:
     def __init__(self, browser, url):
@@ -18,6 +18,7 @@ class Application:
         self.group = GroupHelper(self)
         self.user = UserHelper(self)
         self.url = url
+        self.db = DbFixture
 
     def open_home_page(self):
         wd = self.wd
