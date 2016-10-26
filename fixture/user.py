@@ -44,6 +44,13 @@ class UserHelper:
         self.return_main_page()
         self.users_cache = None
 
+    def delete_user_by_id(self, id):
+        wd = self.app.wd
+        self.select_user_to_edit_by_id(id)
+        wd.find_element_by_xpath("//div[@id='content']/form[2]/input[2]").click()
+        self.return_to_contact()
+        self.users_cache = None
+
     def delete_first_user(self):
         self.delete_user_by_index(0)
 
@@ -51,12 +58,26 @@ class UserHelper:
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
 
+    def select_user_to_edit_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector("input[value='%s']" % id).click()
+        wd.find_element_by_css_selector("a[href='edit.php?id=%s']" % id).click()
+
     def editing_by_index(self, index, user_form):
         wd = self.app.wd
         self.go_to_edit_page(index)
         self.fill_user_form(user_form)
         wd.find_element_by_name("update").click()
         self.return_to_home_page()
+        self.users_cache = None
+
+    def modify_user_by_id(self, user_id, user_form):
+        wd = self.app.wd
+        self.return_to_contact()
+        self.select_user_to_edit_by_id(user_id)
+        self.fill_user_form(user_form)
+        wd.find_element_by_name("update").click()
+        self.return_to_contact()
         self.users_cache = None
 
     def fill_user_form(self, user_form):
